@@ -1,0 +1,15 @@
+A Market Simulator.
+3 Queues representing 3 locations: ATM, ShoppingZone, CheckoutZone
+Default: (in Main, can be changed)
+	Customers arrive at market around once every 2 minutes
+	ATM service time			 : 30 seconds  /customer
+	ShoppingZone service time	 : 120 seconds /customer/fish
+	Checkout service time		 : 30 seconds  /customer/fish
+	Simulation time length		 : 5 hours
+Outputs:
+	Tracks the behavior of each customer. 
+	The time they arrive at/depart from each location
+	From Statistics:
+		A.The average waiting time at each queue
+		B.The average queue length at each location
+		C.The average total time a customer spends at 

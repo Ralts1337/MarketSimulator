@@ -1,7 +1,4 @@
 
-// Xuanqi Xu  CS2255673 March 7 2019
-// Single server, double phase queue
-// Fish Market
 
 import java.util.*; //import everything. who knows what I'm going to use?
 
