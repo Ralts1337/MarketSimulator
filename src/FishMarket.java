@@ -27,6 +27,11 @@ public class FishMarket {
 	static LinkedList<Client> ATMList = new LinkedList<Client>();
 	static LinkedList<Client> shoppingList = new LinkedList<Client>();
 	static LinkedList<Client> checkoutList = new LinkedList<Client>();
+	// Trackers for the servers
+	static QueueTracker ATMTracker 			= new QueueTracker();
+	static QueueTracker shoppingListTracker = new QueueTracker();
+	static QueueTracker checkoutListTracker = new QueueTracker();
+	
 	// One Event List
 	static PriorityQueue<Event> eventList = new PriorityQueue<Event>();
 
@@ -44,7 +49,7 @@ public class FishMarket {
 
 			// After generation, put the arrival event into the event Queue
 			eventList.add(new Market_Arrive(arriveTime, temp));
-			
+			Statistics.customerAmount++;
 			arriveTime += interval;
 		}
 		// End of While loop. Finished adding all Clients.

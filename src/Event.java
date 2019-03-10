@@ -18,6 +18,10 @@ public abstract  class Event implements Comparable<Event>{
 		FishMarket.clock = this.time;
 	}
 	
+	public double getTime() {
+		return this.time;
+	}
+	
 	@Override
 	public int compareTo(Event e) {
 		if(this.time-e.time>0) {
@@ -30,5 +34,6 @@ public abstract  class Event implements Comparable<Event>{
 			return 0;
 		}
 	}
+	
 	
 }

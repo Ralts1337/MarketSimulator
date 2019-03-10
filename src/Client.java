@@ -1,6 +1,6 @@
 
 public class Client {
-	private static int counter=0;
+	private static int counter=1;
 	private double time;				//the time the client arrived, Unit: seconds
 	private int money;
 	private int ID;
@@ -28,6 +28,7 @@ public class Client {
 	}
 	public void setMoney(int amount) {
 		this.money=amount;
+		this.fishAmount=this.money/FishMarket.FISH_PRICE;
 	}
 	public int getFishAmount() {
 		return this.fishAmount;
